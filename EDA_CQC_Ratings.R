@@ -31,7 +31,6 @@ cqc_data$Rating_Rank <- case_when(
   TRUE ~ NA_real_  # For any other unknown cases
 )
 
-
 # Create a new column with the year extracted from the Publication Date
 overall_ratings <- cqc_data %>%
   filter(Rating_Rank > 0) %>%
@@ -102,7 +101,6 @@ heatmap_plot_prop <- ggplot(rating_heatmap_prop_data, aes(x = factor(Year), y = 
 output_path <- "C:/Users/wiltshl/OneDrive - BANES Council/Documents/MSc/Dissertation/EDA Visualisations/heatmap_overall_ratings_proportion_A4.png"
 ggsave(output_path, plot = heatmap_plot_prop, width = 8.27, height = 3.9, units = "in", dpi = 300)
 
-
 # Create individual plots for each domain
 plot_overall <- create_domain_plot("Overall", rating_proportions, "plasma")
 plot_caring <- create_domain_plot("Caring", rating_proportions, "magma")
@@ -110,13 +108,6 @@ plot_effective <- create_domain_plot("Effective", rating_proportions, "cividis")
 plot_responsive <- create_domain_plot("Responsive", rating_proportions, "viridis")
 plot_safe <- create_domain_plot("Safe", rating_proportions, "inferno")
 plot_well_led <- create_domain_plot("Well-led", rating_proportions, "turbo")
-plot_overall
-plot_caring
-plot_effective
-plot_responsive
-plot_safe
-plot_well_led
-
 
 # Define A4 size in inches (A4 dimensions: 8.27 x 11.69 inches)
 a4_width <- 8.27
@@ -134,9 +125,8 @@ setwd("C:/Users/wiltshl/OneDrive - BANES Council/Documents/MSc/Dissertation/EDA 
 # Save the combined plot as a PNG image at A4 size
 ggsave("CQC_Ratings_Domains_A4.png", plot = final_plot, width = a4_width, height = a4_height, units = "in", dpi = 300)
 
-# Optionally save as a PDF
+# Save as a PDF
 ggsave("CQC_Ratings_Domains_A4.pdf", plot = final_plot, width = a4_width, height = a4_height, units = "in")
-
 
 ## Time series of Overall ratings
 # Filter for "Overall" domain and exclude 0 ratings
@@ -195,8 +185,7 @@ ggsave(output_path, plot = heatmap_plot, width = 8.27, height = 3.9, units = "in
 
 
 
-# explore nCarePackages
-
+# Explore number of Care Packages
 # Filter data for the "Overall" domain
 overall_ratings_packages <- cqc_data %>%
   filter(Domain == "Overall", Rating_Rank > 0)  # Only keep rows with Overall domain and valid ratings
@@ -213,7 +202,6 @@ ggplot(overall_ratings_packages, aes(x = nCarePackages, y = factor(Rating_Rank))
   theme(axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 12),
         plot.title = element_text(size = 14, face = "bold"))
-
 
 # Convert ratings to numeric for correlation purposes
 overall_ratings_numeric <- overall_ratings_packages %>%
@@ -234,7 +222,6 @@ ggplot(overall_ratings_numeric, aes(x = nCarePackages, y = Rating_Numeric)) +
   theme(axis.text.x = element_text(size = 12),
         axis.text.y = element_text(size = 12),
         plot.title = element_text(size = 14, face = "bold"))
-
 
 # Convert Rating_Rank to an ordered factor for ordinal logistic regression
 overall_ratings_ordinal <- overall_ratings_packages %>%
@@ -276,21 +263,13 @@ ggplot(predicted_data_long, aes(x = nCarePackages, y = Probability, color = Rati
        y = "Predicted Probability") +
   theme_minimal()
 
-
-
-
 setwd("C:/Users/wiltshl/OneDrive - BANES Council/Documents/MSc/Dissertation/Historic CQC Ratings")
 
-
 vis_miss(cqc_data)
-
-# n Packages over time
 
 # Data processing and plotting
 # Define the file path
 output_path <- "C:/Users/wiltshl/OneDrive - BANES Council/Documents/MSc/Dissertation/EDA Visualisations/average_nCarePackages_over_time.png"
-
-
 
 # Count unique providers rated each year where nCarePackages >= 1
 unique_providers_per_year <- cqc_data %>%
@@ -301,7 +280,6 @@ unique_providers_per_year <- cqc_data %>%
 
 # View the result
 print(unique_providers_per_year)
-
 
 # Adjust theme to ensure text size is 12 points
 final_plot <- cqc_data %>%
@@ -324,9 +302,6 @@ final_plot <- cqc_data %>%
 
 # Save the plot with A4 width and one-third of A4 height (3.9 inches) with font size 12
 ggsave(output_path, plot = final_plot, width = 8.27, height = 3.9, units = "in", dpi = 300)
-
-
-
 
 # Calculate the count of unique publication dates per Location ID
 location_inspection_counts <- cqc_data %>%
@@ -368,8 +343,6 @@ inspection_histogram <- ggplot(location_inspection_counts, aes(x = as.factor(Uni
 # Save the plot
 output_path <- "C:/Users/wiltshl/OneDrive - BANES Council/Documents/MSc/Dissertation/EDA Visualisations/histogram_of_inspections_per_location.png"
 ggsave(output_path, plot = inspection_histogram, width = 8.27, height = 3.9, units = "in", dpi = 300)
-
-
 
 # Calculate the average improvement and standard deviation of improvement for each initial rating level
 average_next_rating <- cqc_improvement %>%
@@ -417,8 +390,6 @@ ratings_improvement <- ggplot(average_next_rating, aes(x = factor(Rating_Rank), 
 # Save the plot
 output_path <- "C:/Users/wiltshl/OneDrive - BANES Council/Documents/MSc/Dissertation/EDA Visualisations/Ratings_Improvement.png"
 ggsave(output_path, plot = ratings_improvement, width = 8.27, height = 3.9, units = "in", dpi = 300)
-
-
 
 # Prepare data to count transitions between initial and next ratings
 cqc_transition_counts <- cqc_data %>%
@@ -491,13 +462,6 @@ ggsave(output_path, width = 8.27, height = 5.85, units = "in", dpi = 300)
 output_path <- "C:/Users/wiltshl/OneDrive - BANES Council/Documents/MSc/Dissertation/EDA Visualisations/Overall_Ratings_Transitions.png"
 ggsave(output_path, width = 8.27, height = 5.85, units = "in", dpi = 300)
 
-
-
-
-
-
-
-
 # Prepare data to count transitions between initial and next ratings
 cqc_transition_counts <- cqc_data %>%
   filter(Domain == "Overall", Rating_Rank > 0) %>%  # Filter for Overall domain and valid ratings
@@ -569,7 +533,6 @@ alluvial_rating_transition <- ggplot(cqc_transition_lodes, aes(x = Axis, stratum
 output_path <- "C:/Users/wiltshl/OneDrive - BANES Council/Documents/MSc/Dissertation/EDA Visualisations/alluvial_rating_transition.png"
 ggsave(output_path, width = 8.27, height = 5.85, units = "in", dpi = 300)
 
-
 # Calculate the counts and percentages for each transition type by initial rating
 transition_summary <- cqc_transition_counts %>%
   group_by(Initial_Rating, Transition_Type) %>%
@@ -588,7 +551,6 @@ output_path <- "C:/Users/wiltshl/OneDrive - BANES Council/Documents/MSc/Disserta
 kable(transition_summary, format = "html", digits = 2, col.names = c("Starting Rating", "Transition Type", "Count", "Percentage")) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed"), full_width = F, font_size = 12) %>%
   save_kable(output_path)
-
 
 
 # Prepare the data: count the number of each rating per year, and convert counts to proportions
