@@ -1,6 +1,7 @@
 # MSc Dissertation Project: Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care
 [![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)](#)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
+![B&NES Logo](/bathnes-logo-colour.png)
 
 This repository contains code and data visualisations for my MSc project titled: **"Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care"**.
 
