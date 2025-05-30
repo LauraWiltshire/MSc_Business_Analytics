@@ -34,6 +34,9 @@ Due to ethical and data protection constraints, the full dataset is not included
 - [Radial Basis Function Transformed Feature Space Plot for SVM](https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT_RBF.html)
 
 ## Results and Conclusion
+<p align="left">
+  <img src="RADAR_PLOT.png" alt="ML Comparison Radar Plot" width = "200"/>
+</p>
 The binary logistic regression model offered the most balanced performance overall, achieving strong specificity and AUC, yet it underperformed in sensitivity, indicating a risk of failing to identify underperforming providers. The pruned decision tree offered higher sensitivity but low specificity, while the SVM model performed least effectively, likely due to class imbalance. While the models demonstrated varying degrees of predictive performance, none exhibited sufficient predictive strength or generalisability to warrant deployment in live decision-making. Several limitations were identified, including the small dataset, limited feature diversity, and class imbalance, which collectively constrained model accuracy. Future research could benefit from inter-authority collaboration to expand dataset size and diversity, incorporation of longitudinal outcome data, and the development of hybrid models that integrate ML with expert judgment.
 <Details>
     This dissertation set out to explore the feasibility and ethical implications of applying ML techniques to predict Care Quality Commission (CQC) ratings for adult social care providers, using a dataset derived from Bath and North East Somerset Council’s Quality and Risk Dashboard. Drawing on locally held commissioning data and publicly available CQC inspection records, three types of supervised learning algorithms, binary logistic regression, decision trees (standard and pruned), and SVM, were evaluated against several performance metrics to determine their predictive validity and potential operational use.
