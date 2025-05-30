@@ -8,7 +8,7 @@
 </p>
 
 ## Project Summary
-The project investigates the use of supervised machine learning algorithms to predict Care Quality Commission (CQC) inspection outcomes for adult social care providers, using a dataset from Bath and North East Somerset Council.
+The following project was conducted as part of the requirement for completing an MSc in Business Analytics at the University of Bath. The study investigates the use of supervised machine learning algorithms to predict Care Quality Commission (CQC) inspection outcomes for adult social care providers, using a dataset from Bath and North East Somerset Council.
 Due to ethical and data protection constraints, the full dataset is not included in this repository.
 
 ### Machine Learning Models Used
