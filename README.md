@@ -1,13 +1,11 @@
 # MSc Dissertation Project: Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care
+[![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)](#)
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
 <p align="left">
   <img src="Uni_of_Bath_logo.png" alt="B&NES Logo" width = "160"/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="bathnes-logo-colour.png" alt="B&NES Logo" width = "160"/>
 </p>
-
-[![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)](#)
-[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
-
 
 ## Project Summary
 The project investigates the use of supervised machine learning algorithms to predict Care Quality Commission (CQC) inspection outcomes for adult social care providers, using a dataset from Bath and North East Somerset Council.
