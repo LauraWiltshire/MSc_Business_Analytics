@@ -20,6 +20,7 @@ Due to ethical and data protection constraints, the full dataset is not included
 ## Interactive Visualisations
 - [3D Feature Space Plot](https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT.html)
 - [Radial Basis Function Transformed Feature Space Plot for SVM](https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT_RBF.html)
+<iframe src= "https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT.html" width="100%" height="400px"></iframe>
 
 ## Author
 **Laura Wiltshire**
