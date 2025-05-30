@@ -41,6 +41,8 @@ The binary logistic regression model offered the most balanced performance overa
 
 <Details>
 This dissertation set out to explore the feasibility and ethical implications of applying ML techniques to predict Care Quality Commission (CQC) ratings for adult social care providers, using a dataset derived from Bath and North East Somerset Council’s Quality and Risk Dashboard. Drawing on locally held commissioning data and publicly available CQC inspection records, three types of supervised learning algorithms, binary logistic regression, decision trees (standard and pruned), and SVM, were evaluated against several performance metrics to determine their predictive validity and potential operational use.    
+
+
     
 While the models demonstrated varying degrees of predictive performance, none exhibited sufficient predictive strength or generalisability to warrant deployment in live decision-making. The binary logistic regression model offered the most balanced performance overall, achieving strong specificity and AUC, yet it underperformed in sensitivity, indicating a risk of failing to identify underperforming providers. The pruned decision tree offered higher sensitivity but low specificity, while the SVM model performed least effectively, likely due to class imbalance. These results suggest the importance of carefully selecting and validating models in public sector contexts where false negatives and false positives carry significant ethical and operational consequences.
 
