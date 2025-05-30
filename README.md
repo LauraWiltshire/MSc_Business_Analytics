@@ -1,6 +1,6 @@
 # MSc Dissertation Project: Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care
-![Uni Logo](/Uni_of_Bath_logo.png)
-![B&NES Logo](/bathnes-logo-colour.png)
+<img src="Uni_of_Bath_logo.png" alt="B&NES Logo" width = "200"/>
+<img src="bathnes-logo-colour.png" alt="B&NES Logo" width = "200"/>
 
 [![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)](#)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
