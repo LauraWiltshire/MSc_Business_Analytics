@@ -35,7 +35,7 @@ Due to ethical and data protection constraints, the full dataset is not included
 
 ## Results and Conclusion
 <p align="left">
-  <img src="RADAR_PLOT.png" alt="ML Comparison Radar Plot" width = "200"/>
+  <img src="RADAR_PLOT.png" alt="ML Comparison Radar Plot" width = "500"/>
 </p>
 The binary logistic regression model offered the most balanced performance overall, achieving strong specificity and AUC, yet it underperformed in sensitivity, indicating a risk of failing to identify underperforming providers. The pruned decision tree offered higher sensitivity but low specificity, while the SVM model performed least effectively, likely due to class imbalance. While the models demonstrated varying degrees of predictive performance, none exhibited sufficient predictive strength or generalisability to warrant deployment in live decision-making. Several limitations were identified, including the small dataset, limited feature diversity, and class imbalance, which collectively constrained model accuracy. Future research could benefit from inter-authority collaboration to expand dataset size and diversity, incorporation of longitudinal outcome data, and the development of hybrid models that integrate ML with expert judgment.
 <Details>
