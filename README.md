@@ -1,5 +1,5 @@
 # MSc Dissertation Project: Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care
-![Uni Logo](/Uni of Bath logo (slate).png)
+![Uni Logo](/Uni_of_Bath_logo.png)
 ![B&NES Logo](/bathnes-logo-colour.png)
 
 [![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)](#)
