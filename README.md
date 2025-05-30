@@ -36,9 +36,7 @@ Due to ethical and data protection constraints, the full dataset is not included
 ## Author
 **Laura Wiltshire**
 
-MSc Business Analytics, 
-
-University of Bath
+MSc Business Analytics, University of Bath
 
 Bath and North East Somerset Council
 
