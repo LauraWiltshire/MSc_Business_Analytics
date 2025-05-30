@@ -8,7 +8,6 @@ Due to ethical and data protection constraints, the full dataset is not included
 
 ## Data Collection
 **Please Note:** Commissioner data is not publicly available and will not be uploaded due to data protection and sensitivity.
-### Data Sources:
 ### CQC Ratings
 - [Google Drive - CQC Historical Data](https://drive.google.com/drive/folders/0B1jvn_rdpdEzMUtiNVoyeW9rb2M?resourcekey=0-J1nm1TwV6Vf_N9DArEe6XQ)
 - [Python Script to Extract from CQC API](https://github.com/LauraWiltshire/MSc_Business_Analytics/blob/main/CQC_API_Script.py)
