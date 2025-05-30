@@ -1,5 +1,5 @@
 # MSc Dissertation Project: Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care
-
+![Made with R](https://img.shields.io/badge/R-Date%20Science-blue)
 This repository contains code and data visualisations for my MSc project titled: **"Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care"**.
 
 ## Project Summary
@@ -20,7 +20,6 @@ Due to ethical and data protection constraints, the full dataset is not included
 ## Interactive Visualisations
 - [3D Feature Space Plot](https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT.html)
 - [Radial Basis Function Transformed Feature Space Plot for SVM](https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT_RBF.html)
-<iframe src= "https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT.html" width="100%" height="400px"></iframe>
 
 ## Author
 **Laura Wiltshire**
