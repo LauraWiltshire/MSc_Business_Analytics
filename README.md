@@ -8,7 +8,8 @@
 [![R](https://img.shields.io/badge/R-%23276DC3.svg?logo=r&logoColor=white)](#)
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
 
-This repository contains code and data visualisations for my MSc project titled: **"Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care"**.
+This repository contains code and data visualisations for my MSc project titled: 
+**"Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care"**.
 
 ## Project Summary
 The project investigates the use of supervised machine learning algorithms to predict Care Quality Commission (CQC) inspection outcomes for adult social care providers, using a dataset from Bath and North East Somerset Council.
