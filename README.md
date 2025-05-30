@@ -10,7 +10,7 @@
 
 This repository contains code and data visualisations for my MSc project titled: 
 <p align="center">
-**"Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care"**.
+<blockquote>Developing Predictive Models for Care Quality Commission Inspection Ratings in Adult Social Care</blockquote>
 </p>
 
 ## Project Summary
