@@ -30,7 +30,9 @@ Due to ethical and data protection constraints, the full dataset is not included
 
 - Joining CQC and Commissioner data using [R script](https://github.com/LauraWiltshire/MSc_Business_Analytics/blob/main/Join_CQC_and_Commissioner_Data.R) 
 
-  
+> [!TIP]
+> It may be required to deduplicate the ratings per provider using publication date
+
 ## Data Analysis
 - [Exploratory Data Analysis - R](https://github.com/LauraWiltshire/MSc_Business_Analytics/blob/main/EDA_CQC_Ratings.R)
 - [Interactive 3D Feature Space Plot](https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT.html)
