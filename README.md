@@ -11,7 +11,7 @@
 The following project was conducted as part of the requirement for completing an MSc in Business Analytics at the University of Bath. The study investigates the use of supervised machine learning algorithms to predict Care Quality Commission (CQC) inspection outcomes for adult social care providers, using a dataset from Bath and North East Somerset Council.
 Due to ethical and data protection constraints, the full dataset is not included in this repository.
 
-### Machine Learning Models Used
+### Machine Learning Models Used:
 
 - Binary Logistic Regression
 - Decision Tree
@@ -19,19 +19,25 @@ Due to ethical and data protection constraints, the full dataset is not included
 - Support Vector Machine
 
 ## Data Collection
-**Please Note:** Commissioner data is not publicly available and will not be uploaded due to data protection and sensitivity.
-### CQC Ratings
-- [Google Drive - CQC Historical Data](https://drive.google.com/drive/folders/0B1jvn_rdpdEzMUtiNVoyeW9rb2M?resourcekey=0-J1nm1TwV6Vf_N9DArEe6XQ)
-- [Python Script to Extract from CQC API](https://github.com/LauraWiltshire/MSc_Business_Analytics/blob/main/CQC_API_Script.py)
-- [R Script to inner join CQC & Commissioner Data](https://github.com/LauraWiltshire/MSc_Business_Analytics/blob/main/Join_CQC_and_Commissioner_Data.R)
+> [!NOTE] 
+> Commissioner data is not publicly available and will not be uploaded due to data protection and sensitivity.
+
+- Historical CQC ratings from [CQC's Google Drive](https://drive.google.com/drive/folders/0B1jvn_rdpdEzMUtiNVoyeW9rb2M?resourcekey=0-J1nm1TwV6Vf_N9DArEe6XQ)
+
+- Create account for the [CQC Syndication API](https://api-portal.service.cqc.org.uk/) to populate the auth token in the [.env file](./.env.example)
+
+- Current Overall CQC ratings fetched using [Python script](./CQC_API_Script.py) for each specified Location ID
+
+- Joining CQC and Commissioner data using [R script](https://github.com/LauraWiltshire/MSc_Business_Analytics/blob/main/Join_CQC_and_Commissioner_Data.R) 
+
   
-## Data Analysis Scripts
-- [EDA and Data Visualisation - R](https://github.com/LauraWiltshire/MSc_Business_Analytics/blob/main/EDA_CQC_Ratings.R)
+## Data Analysis
+- [Exploratory Data Analysis - R](https://github.com/LauraWiltshire/MSc_Business_Analytics/blob/main/EDA_CQC_Ratings.R)
+- [Interactive 3D Feature Space Plot](https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT.html)
+- [Interactive Radial Basis Function Transformed Feature Space Plot](https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT_RBF.html)
+
+## Machine Learning
 - [Machine Learning Models - R](https://github.com/LauraWiltshire/MSc_Business_Analytics/blob/main/CQC_Machine_Learning.R)
-  
-## Interactive Visualisations
-- [3D Feature Space Plot](https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT.html)
-- [Radial Basis Function Transformed Feature Space Plot for SVM](https://laurawiltshire.github.io/MSc_Business_Analytics/3D_PLOT_RBF.html)
 
 ## Results and Conclusion
 <p align="left">
